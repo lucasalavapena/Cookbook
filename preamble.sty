@@ -1,1 +1,29 @@
 \usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+% \usepackage[titlepage]{geometry}
+\usepackage{blindtext}
+% this I hope is the file I have uploaded since it is a newer version than the one on CTAN
+\usepackage{xcookybooky}
+
+% IMAGES
+\usepackage{graphicx}
+\graphicspath{{images/}{../images/}}
+
+% HYPERLINKING AND PDF METADATA
+
+
+\usepackage[backref=page,
+            citecolor=green,
+            linkcolor=green,
+            urlcolor=green,
+            unicode,
+            pdfauthor={Alava Peña Family and Friends},
+            pdftitle={Alava Peña Cookbook: Family and Friends},
+            pdfsubject={Cooking},
+            pdfkeywords={Cookbook}]{hyperref}
+            
+            
+\usepackage[type={CC},modifier={by-sa},version={4.0},]{doclicense}
+\usepackage{ebgaramond}
+
+\usepackage{subfiles} % Best loaded last in the preamble

@@ -481,12 +481,12 @@
 }
 
 %% SUPPORTING COMMANDS
-\newcommand{\step}
+\newcommand{\step}[1][2]
 {%
     \stepcounter{step}%
     \lettrine
     [%
-        lines=2,
+        lines=#1,
         lhang=0,          % space into margin, value between 0 and 1
         loversize=0.15,   % enlarges the height of the capital
         slope=0em,

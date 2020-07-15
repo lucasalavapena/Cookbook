@@ -1,6 +1,6 @@
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper]{geometry}
-% \usepackage[titlepage]{geometry}
+
 \usepackage{blindtext}
 % this I hope is the file I have uploaded since it is a newer version than the one on CTAN
 \usepackage{xcookybooky}
@@ -8,6 +8,40 @@
 % IMAGES
 \usepackage{graphicx}
 \graphicspath{{images/}{../images/}}
+
+
+% Colors
+\usepackage{xcolor}
+
+% color definitions
+\definecolor{DarkGreen}{rgb}{0,0.5,0}
+\definecolor{DarkBlue}{rgb}{0, 0, 0.7}
+\definecolor{DarkGray}{rgb}{0.23, 0.23, 0.23}
+
+% XCOOKBOOKY Sets
+
+\setRecipeColors{
+    recipename = DarkGreen,
+    intro = black,
+    ing = black,
+    inghead = DarkGray,
+    prep = black,
+    prephead = black,
+    suggestion = black,
+    suggestionhead = black
+    separationgraph = black,
+    hint = red,
+    hinthead = red,
+    hintline = red,
+    numeration = red,
+}
+
+\setRecipeSizes{
+    recipename = \Huge,
+    inghead = \Large,
+    prephead = \Large,
+}
+
 
 % HYPERLINKING AND PDF METADATA
 
@@ -24,6 +58,10 @@
             
             
 \usepackage[type={CC},modifier={by-sa},version={4.0},]{doclicense}
-\usepackage{ebgaramond}
+
+
+\usepackage{ebgaramond} % font
+\usepackage{makeidx}
+\makeindex
 
 \usepackage{subfiles} % Best loaded last in the preamble

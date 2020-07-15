@@ -3,13 +3,23 @@
 
 Example from \verb!xcookybooky! documentation.
 \clearpage
+
+% \setBackgroundPicture[x, y, width=\paperwidth-3cm, height, orientation=pagecenter]
+% {Images/background}
+
+\setRecipeSizes{
+    recipename = \Huge,
+    inghead = \small,
+    prephead = \small,
+}
+
 \begin{recipe}
 [ % Optionale Eingaben
 	preparationtime = {\unit[1]{h}},
 	portion = \portion{5},
 	source = R. Gaus
 ]
-{Mousse au Chocolat}
+{{Mousse au Chocolat}\index{Mousse au Chocolat}}
 	
 	\graph
 	{% Bilder
@@ -38,6 +48,61 @@ Example from \verb!xcookybooky! documentation.
 	\hint
 	{%
 		Der Schokoladenanteil kann auch gesenkt werden.
+	}
+
+\end{recipe}
+
+\clearpage
+
+\setRecipeSizes{
+    recipename = \Huge,
+    inghead = \Large,
+    prephead = \Large,
+}
+
+\begin{recipe}
+[ % Optionale Eingaben
+	preparationtime = {\unit[10]{min}},
+	portion = \portion{1},
+	source = L. Alava Peña
+]
+{{Salad de Lucas}\index{Salad de Lucas}}
+	\introduction
+	{
+    For years ney centuries salads have on people's mind leaving them awake at night longing for salad.
+	}
+
+	\graph
+	{% Bilder
+		small=Images/glass,	% kleines Bild
+		big=Images/ingredients % großes (längeres) Bild
+	}
+
+	\ingredients
+	{% Zutaten
+		2  & Carrots\\
+		1		 & Cucumber\\
+		1/2 & Medium Iceberg lettuce\\
+		5-6 & Olives\\
+		\unit[80]{g} & Mozzarella\\
+		1/4 & Red Bell Pepper\\
+        1/4 & Onion\\
+        1/4 & Balsamic vinegar\\
+        1/4 & Walnut oil\\
+	}
+	
+	\preparation
+	{ % Zubereitung
+		\step[1] Chop chop chop
+		\step[1] aaaaaaaaaaa
+		\step[1] aaaaaaaaaaaaaaaaaaaaaaaaaa
+		\step[1] Put in walnut oil and then balsamic vinegar.
+		\step[1] Mix the salad, ideally using two wooden spatula.
+	}
+
+	\suggestion
+	{
+	do not steal lucas' salad
 	}
 
 \end{recipe}

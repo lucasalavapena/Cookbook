@@ -1,0 +1,17 @@
+name: dxjoke Tectonic Docker
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v1
+      - name: Compile
+        run: docker run --mount src=$GITHUB_WORKSPACE/src,target=/usr/src/tex,type=bind phpirates/tectonic-docker:0.3.0 /bin/sh -c "tectonic main.tex"
+      - name: Upload pdf
+        uses: actions/upload-artifact@v2
+        with:
+          name: main.zip
+          path: src/main.pdf
